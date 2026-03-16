@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CV - Gunwoo Kim</title>
+<meta name="description" content="김건우의 이력입니다." />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org3254cbf" class="outline-2">
+<h2 id="org3254cbf">CV</h2>
+</div>
+
+<div id="outline-container-orgec23b0b" class="outline-2">
+<h2 id="orgec23b0b"><span class="underline">연극</span></h2>
+<div class="outline-text-2" id="text-orgec23b0b">
+<p>
+<i>2026. 1</i> <b>외투</b> 주연, 연출 / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2025. 12</i> 입체낭독극 <b>노파</b> 주연, 연출 / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2025. 10</i> <b>검은 수사</b> 주연, 연출 / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2025. 8</i> <b>시간의 배</b> 조명디자인 / 서점극장 라블레<br>
+<i>혜화동1번지</i> (실패를 위한 실험실 참가작)<br>
+</p>
+
+<p>
+<i>2025. 1</i> <b>외투</b> 주연, 연출 / 서점극장 라블레<br>
+<i>혜화동1번지</i><br>
+</p>
+
+<p>
+<i>2024. 6</i> <b>검은 수사</b> 주연, 연출 / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2023. 12</i> <b>외투</b> 주연, 연출 / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2023. 8</i> <b>검은 수사</b> 주연, 연출 / 서점극장 라블레<br>
+(서울형 책방 참가작)<br>
+</p>
+
+<p>
+<i>2022. 12</i> <b>외투</b> 주연, 연출 / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2022. 10</i> <b>외투</b> 주연, 연출 / 서점극장 라블레<br>
+(서울형 책방 참가작)<br>
+</p>
+
+<p>
+<i>2020. 8</i> <b>연기의 해로움에 대하여 3</b> 출연 / 콜렉티브 뒹굴<br>
+<i>문화비축기지</i> (서울 프린지페스티벌 참가작)<br>
+</p>
+
+<p>
+<i>2019. 9</i> <b>강령탈춤</b> 상쇠, 연출 / 로맨틱용광로<br>
+<i>Tiyatro Medresesi, Türkiye</i> (튀르키예 MedFest 참가작)<br>
+</p>
+
+<p>
+<i>2019. 8-12</i> <b>미스 미얄</b> 출연 / 로맨틱용광로<br>
+<i>서울 경기 문화 소외 지역</i> (신나는 예술여행)<br>
+</p>
+
+<p>
+<i>2014.3</i> <b>날이 갈수록</b> 연출 / 프로젝트 날로 &amp; 아르코미술관<br>
+<i>마로니에 공원</i><br>
+</p>
+
+<p>
+<i>2013. 12</i> <b>돌아온 박첨지</b> 출연 / 극단 미추&amp;백수광부&amp;사니너머<br>
+<i>예술공간 서울</i><br>
+</p>
+
+<p>
+<i>2013. 10</i> <b>니나</b> 조연출 / 극단 백수광부<br>
+<i>예술공간 서울</i><br>
+</p>
+
+<p>
+<i>2013. 7</i> <b>꼭두각시놀음</b> 출연 / 극단 미추&amp;백수광부<br>
+<i>밀양연극촌 숲의 극장</i> (밀양여름공연예술축제 초청작)<br>
+</p>
+
+<p>
+<i>2013. 5-7</i> <b>꼭두각시놀음</b> 출연 / 극단 백수광부<br>
+<i>전국 문화 소외 지역</i> (신나는 예술여행)<br>
+</p>
+
+<p>
+<i>2012. 12</i> <b>임차인</b> 조연출 / 극단 백수광부<br>
+<i>정보소극장</i> (윤영선 페스티벌 참가작)<br>
+</p>
+
+<p>
+<i>2012. 10</i> <b>나의처용은밤이면양들을사러마켓에간다</b> 조연출 / 극단 백수광부<br>
+<i>밀양연극촌 우리동네극장</i> (밀양여름공연예술축제 초청작)<br>
+</p>
+
+<p>
+<i>2012. 6</i> <b>과부들</b> 출연 / 극단 백수광부<br>
+<i>아르코예술극장 대극장</i><br>
+</p>
+
+<p>
+<i>2012. 3</i> <b>봄날</b> 무대감독 / 극단 백수광부<br>
+<i>명동예술극장</i><br>
+</p>
+</div>
+</div>
+<div id="outline-container-org4171f02" class="outline-2">
+<h2 id="org4171f02"><span class="underline">영화</span></h2>
+<div class="outline-text-2" id="text-org4171f02">
+<p>
+<i>2011</i> 단편 <b>천국의 아이</b> 주연<br>
+</p>
+</div>
+</div>
+<div id="outline-container-org23c6882" class="outline-2">
+<h2 id="org23c6882"><span class="underline">개발</span></h2>
+<div class="outline-text-2" id="text-org23c6882">
+<p>
+<i>2022. 10</i> <b>예약 폼과 잔여석 대시보드</b> 개발<br>
+<i>Google AppsScript</i> / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2021. 10</i> 참여형 연극 <b>배팅 로얄: 더 나은 미래편</b> 베팅 시스템 개발<br>
+<i>React</i> / 콜렉티브 뒹굴<br>
+<i>아르코미술관</i> (아르코 융복합 예술 페스티벌 참가작)<br>
+</p>
+
+<p>
+<i>2021. 6</i> <b>Po-tent City</b> 관객 참여 소프트웨어 개발<br>
+<i>Wordpress</i> / Art Action Earwig<br>
+<i>문화비축기지</i><br>
+</p>
+
+<p>
+<i>2021. 4-6</i> <b>Let Me In</b> 인터렉티브 미디어 아트 작품 비대면 앱 개발<br>
+<i>Android, iOS, React Native</i> / Cinevolution<br>
+<i>Richmond, Canada</i> (미디어아트축제 Digital Carnival Z 참여작)<br>
+</p>
+
+<p>
+<i>2021. 3</i> <b>간이 POS</b> 개발<br>
+<i>Google AppsScript</i> / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2020. 12</i> <b>서점극장 라블레 홈페이지</b> 개발<br>
+<i>React, Gatsby</i> / 서점극장 라블레<br>
+</p>
+
+<p>
+<i>2020. 12</i> 이동형 오디오 연극 <b>신의놀이</b> 개발 PM<br>
+<i>Android</i> / 씨어터라이크<br>
+<i>명동 일대</i> (ART MUST GO ON 참가작)<br>
+</p>
+
+<p>
+<i>2020. 9</i> <b>Home Squat Home</b><br>
+<i>Android, iOS, React Native</i> / Art Action Earwig<br>
+</p>
+
+<p>
+<i>2020. 7</i> 예술교육 현장 앱 <b>이시미를 찾아라</b> 개발<br>
+<i>Android, AR</i> / 극단 백수광부<br>
+<i>강원도내 문화 소외 지역</i> (신나는예술여행)<br>
+</p>
+
+<p>
+<i>2019. 12</i> 참여형 연극 <b>오퍼튜니티 넥스트</b> 게임형 앱 개발<br>
+<i>Android, React Native</i> / 콜렉티브 뒹굴<br>
+<i>인사미술공간</i><br>
+</p>
+
+<p>
+<i>2018</i> 마이스 정보 플랫폼 <b>고양 MICE ON</b> 앱 개발<br>
+<i>Android, iOS, Digital Touch Stamp</i> / 킨터치 &amp; 고양CVB<br>
+</p>
+
+<p>
+<i>2017-2019</i> 글로벌 전시회 플랫폼 <b>PaperlessExpo</b> 앱 개발<br>
+<i>Android, iOS, Chat service, Digital Touch Stamp</i> / 킨터치<br>
+</p>
+
+<p>
+<i>2016-2017</i> 공유셔틀 서비스 <b>Shuttling</b> 웹사이트 개발<br>
+<i>Java, Spring, MySQL</i> / 물빛루트<br>
+</p>
+</div>
+</div>
+<div id="outline-container-org142d12d" class="outline-2">
+<h2 id="org142d12d">강연</h2>
+</div>
+</div>
+</body>
+</html>
